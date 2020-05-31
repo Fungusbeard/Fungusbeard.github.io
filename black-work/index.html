@@ -51,7 +51,7 @@ if (!FOOBOX.ga){
 			$(".fbx-instance").off(listeners).on(listeners);
 		},
 		afterLoad: function(e){
-			var trackUrl = e.fb.item.url.replace('http://www.todorveljkov.com', '');
+			var trackUrl = e.fb.item.url.replace('http://todorveljkov.com', '');
 			if (typeof ga != 'undefined') {
 				ga('send', 'pageview', location.pathname + location.search  + location.hash);
 				ga('send', 'event', 'Images', 'View', e.fb.item.url);
@@ -181,7 +181,7 @@ FOOBOX.ga.init();
 
 		<div class="section-inner">
 
-			<form role="search" aria-label="Search for:" method="get" class="search-form" action="http://www.todorveljkov.com/">
+			<form role="search" aria-label="Search for:" method="get" class="search-form" action="http://todorveljkov.com/">
 	<label for="search-form-1">
 		<span class="screen-reader-text">Search for:</span>
 		<input type="search" id="search-form-1" class="search-field" placeholder="Search …" value="" name="s">
